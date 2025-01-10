@@ -5,6 +5,21 @@ git config --global user.email "3071988407@qq.com"
 git config --global user.name "QinTangBuQiuCao" 
 2. 
 远程 仓库 
+1. github 注册账号 
+2. github 创建一个远程仓库
+3. 操作流程 
+echo "# git_demo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/QinTangBuQiuCao/git_demo.git
+git push -u origin main
+
+本地分支
+master 
+远程分支
+
 
 1.  初始化仓库
 本地 git init 
@@ -13,7 +28,7 @@ git config --global user.name "QinTangBuQiuCao"
 newfile  新文件
 3.  将新文件 添加 暂存区
 git add 文件名
-4. 提交到本地仓库
-git commit -m "提交信息"
+4. 提交到本地仓库 --> 创建一个默认叫master分支
+git commit -m "提交信息" 
 5. 查看提交日志
 git log 
